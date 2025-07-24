@@ -225,6 +225,7 @@ $selectors = @(
 	'MicrosoftWindows.Client.WebExperience';
 	'MicrosoftWindows.CrossDevice';
 	'Microsoft.ZuneVideo';
+	'Microsoft.WindowsCamera';
 );
 $getCommand = {
   Get-AppxProvisionedPackage -Online;
