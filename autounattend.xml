@@ -666,9 +666,6 @@ $scripts = @(
 		reg.exe add "HKLM\SYSTEM\CurrentControlSet\Control\FileSystem" /v LongPathsEnabled /t REG_DWORD /d 1 /f
 	};
 	{
-		Set-ExecutionPolicy -Scope 'LocalMachine' -ExecutionPolicy 'RemoteSigned' -Force;
-	};
-	{
 		fsutil.exe behavior set disableLastAccess 1;
 	};
 	{
@@ -936,3 +933,4 @@ $scripts = @(
 		</File>
 	</Extensions>
 </unattend>
+
